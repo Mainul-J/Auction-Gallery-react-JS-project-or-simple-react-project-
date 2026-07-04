@@ -1,10 +1,23 @@
-import React from 'react';
 
-const Table = () => {
+    // "id": 1,
+    // "title": "Vintage Rolex Submariner",
+    // "description": "Classic stainless steel dive watch in excellent condition.",
+    // "currentBidPrice": 8500,
+    // "timeLeft": "2d 5h",
+    // "bidsCount": 24,
+    // "image": "https://ibb.co.com/5znMqsP"
+
+
+const Table = ({products ,handelAdd}) => {
+
+  // console.log(products);
+
+  // const {id,title,currentBid} = products
+
     return (
-        <div>
+        <div className='w-7/12'>
        <div className="overflow-x-auto rounded-xl border border-base-300 shadow-lg">
-  <table className="table table-zebra">
+  <table className="table table-zebra" >
     <thead className="bg-base-200">
       <tr>
         <th className="border-b border-base-300">items</th>
@@ -15,32 +28,24 @@ const Table = () => {
     </thead>
 
     <tbody>
-      <tr>
+
+      {
+        products.map((item)=> <tr key={item.id}>
         <td><div className='flex items-center gap-4'>
           <span>
-            <img src="" alt="not found" />
+            <img src={item.image} alt="not found" className="h-16 w-16 object-contain" />
           </span>
-          <h3>title</h3>
-          </div></td>
-        <td>$1200</td>
-        <td>2 days</td>
-        <td><button className='btn'>
+          <h3>{item.title}</h3>
+          </div>
+          </td>
+        <td>{item.currentBidPrice}</td>
+        <td>{item.timeLeft} </td>
+        <td><button 
+        onClick={()=>handelAdd(item)}
+        className='btn'>
           btn</button></td>
-      </tr>
-
-      <tr>
-        <th>2</th>
-        <td>Classic Watch</td>
-        <td>Accessories</td>
-        <td>$450</td>
-      </tr>
-
-      <tr>
-        <th>3</th>
-        <td>Antique Vase</td>
-        <td>Home Decor</td>
-        <td>$230</td>
-      </tr>
+      </tr>)
+      }
     </tbody>
   </table>
 </div>

@@ -1,10 +1,58 @@
-// https://ibb.co.com/5znMqsP img 1
 
-// https://ibb.co.com/GYCMcDh img 2 
 
-// https://ibb.co.com/1tznFYR9 img 3 
-// https://ibb.co.com/x8XYXHn8 img 4 
-
-// https://ibb.co.com/NdrzSKrK img 5
-
-// https://ibb.co.com/ds9ytB28 img 6
+[
+  {
+    "id": 1,
+    "title": "Vintage Rolex Submariner",
+    "description": "Classic stainless steel dive watch in excellent condition.",
+    "currentBidPrice": 8500,
+    "timeLeft": "2d 5h",
+    "bidsCount": 24,
+    "image": "https://i.ibb.co.com/1pdvHRk/Bid1-min.png"
+  },
+  {
+    "id": 2,
+    "title": "GivesSon's Guitar",
+    "description": "Apple MacBook Pro with M3 Pro chip, 18GB RAM, 512GB SSD.",
+    "currentBidPrice": 1850,
+    "timeLeft": "1d 8h",
+    "bidsCount": 17,
+    "image": "https://i.ibb.co.com/qqmgk8Z/Bid2-min.png"
+  },
+  {
+    "id": 3,
+"title": "MacBook Pro 16-inch M3",
+    "description": "Apple MacBook Pro with M3 Pro chip, 18GB RAM, 512GB SSD.",
+    "currentBidPrice": 1850,
+    "timeLeft": "1d 8h",
+    "bidsCount": 17,
+    "image": "https://i.ibb.co.com/5gK9bXs5/Bid3-min.png"
+  },
+  {
+    "id": 4,
+    "title": "1960's Rollex watch",
+    "description": "High-performance gaming desktop with Intel Core i9 and RTX 4080.",
+    "currentBidPrice": 2200,
+    "timeLeft": "5h 30m",
+    "bidsCount": 42,
+    "image": "https://i.ibb.co.com/2YWSWNzY/Bid4-min.png"
+  },
+  {
+    "id": 5,
+    "title": "Hitler's used Chair",
+    "description": "Official basketball signed by a legendary NBA player.",
+    "currentBidPrice": 780,
+    "timeLeft": "4d 1h",
+    "bidsCount": 12,
+    "image": "https://i.ibb.co.com/q3Cw5pCp/Bid5-min.png"
+  },
+  {
+    "id": 6,
+    "title": "Milk and Honey by Rupi Kure with Signature ",
+    "description": "Carbon frame mountain bike with Shimano XT groupset.",
+    "currentBidPrice": 1250,
+    "timeLeft": "12h 15m",
+    "bidsCount": 19,
+    "image": "https://i.ibb.co.com/Q7BGk9Ny/Bid6-min.png"
+  }
+]
