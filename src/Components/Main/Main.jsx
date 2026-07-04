@@ -6,7 +6,7 @@ const Main = () => {
     const [products, setProducts] = useState([]);
     const [favorite,setFavorite] = useState([]);
     useEffect(()=>{
-            fetch('../../../public/auction.json')
+            fetch('/auction.json')
                 .then(res=>res.json())
                 .then(data=>setProducts(data))
     },[]);
@@ -31,6 +31,7 @@ const Main = () => {
                 <Table 
                 products={products}
                 handelAdd={handelAdd}
+                favorite={favorite}
                 ></Table>
                 <Favourit></Favourit>
             </div>

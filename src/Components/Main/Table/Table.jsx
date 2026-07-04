@@ -8,7 +8,7 @@
     // "image": "https://ibb.co.com/5znMqsP"
 
 
-const Table = ({products ,handelAdd}) => {
+const Table = ({products ,handelAdd, favorite}) => {
 
   // console.log(products);
 
@@ -27,26 +27,39 @@ const Table = ({products ,handelAdd}) => {
       </tr>
     </thead>
 
-    <tbody>
+              <tbody>
+            {products.map((item) => {
+              const isFavorite = favorite.find(f => f.id === item.id);
 
-      {
-        products.map((item)=> <tr key={item.id}>
-        <td><div className='flex items-center gap-4'>
-          <span>
-            <img src={item.image} alt="not found" className="h-16 w-16 object-contain" />
-          </span>
-          <h3>{item.title}</h3>
-          </div>
-          </td>
-        <td>{item.currentBidPrice}</td>
-        <td>{item.timeLeft} </td>
-        <td><button 
-        onClick={()=>handelAdd(item)}
-        className='btn'>
-          btn</button></td>
-      </tr>)
-      }
-    </tbody>
+              return (
+                <tr key={item.id}>
+                  <td>
+                    <div className='flex items-center gap-4'>
+                      <img
+                        src={item.image}
+                        alt="not found"
+                        className="h-16 w-16 object-contain"
+                      />
+                      <h3>{item.title}</h3>
+                    </div>
+                  </td>
+
+                  <td>{item.currentBidPrice}</td>
+                  <td>{item.timeLeft}</td>
+
+                  <td>
+                    <button
+                      onClick={() => handelAdd(item)}
+                      disabled={!!isFavorite}
+                      className='btn'
+                    >
+                      btn
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
   </table>
 </div>
         </div>
