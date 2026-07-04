@@ -1,0 +1,18 @@
+/* .back{
+    background-image: url(../../assets/Banner-min.jpg);
+    height: 600px;
+    background-position:center;
+    transform: scaleX(-1);
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+.back {
+  background-image: url('../../assets/Banner-min.jpg');
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
