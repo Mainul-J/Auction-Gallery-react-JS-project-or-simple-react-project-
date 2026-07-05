@@ -6,6 +6,8 @@
     // "timeLeft": "2d 5h",
     // "bidsCount": 24,
     // "image": "https://ibb.co.com/5znMqsP"
+import { FaHeart } from "react-icons/fa6";
+// import { LuHeart } from "react-icons/lu";
 
 
 const Table = ({products ,handelAdd, favorite}) => {
@@ -48,13 +50,13 @@ const Table = ({products ,handelAdd, favorite}) => {
                   <td>{item.timeLeft}</td>
 
                   <td>
-                    <button
-                      onClick={() => handelAdd(item)}
-                      disabled={!!isFavorite}
-                      className='btn'
-                    >
-                      btn
+                    <button onClick={() => handelAdd(item)}
+                      disabled={isFavorite}
+                      className={`text-4xl  ${isFavorite? 'text-red-700': ' text-blue-400'}`}
+                      >
+                      <FaHeart/>
                     </button>
+                    
                   </td>
                 </tr>
               );

@@ -1,12 +1,12 @@
-
+import { CiHeart } from "react-icons/ci";
 
 const Favourit = () => {
     return (
-        <div className='parent-section w-3/12  border'>
+        <div className='parent-section w-3/12   h-56 shadow-md'>
             <div className='child '>
-                <div className="flex place-content-center px-10 py-5">
+                <div className="flex items-center justify-center px-10 py-5">
                     <span>
-                        icon
+                        <CiHeart size={25}/>
                     </span>
                     <h4 className="Favorite flex place-content-center">Favorite Items</h4>
                 </div>
