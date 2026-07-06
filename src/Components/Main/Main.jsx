@@ -12,7 +12,7 @@ const Main = () => {
     },[]);
 
     const handelAdd = (products) =>{
-        console.log(products);
+        // console.log(products);
         const exiting = favorite.find((item)=>item.id === products.id)
         if(exiting) {
             return exiting
@@ -20,7 +20,7 @@ const Main = () => {
         setFavorite([...favorite,products])
     }
 
-    console.log(favorite);
+    // console.log(favorite);
     // console.log(products);
     return (
         <section className="main  mt-16 py-10">
@@ -33,7 +33,7 @@ const Main = () => {
                 handelAdd={handelAdd}
                 favorite={favorite}
                 ></Table>
-                <Favourit></Favourit>
+                <Favourit favorite={favorite}></Favourit>
             </div>
         </section>
     );
