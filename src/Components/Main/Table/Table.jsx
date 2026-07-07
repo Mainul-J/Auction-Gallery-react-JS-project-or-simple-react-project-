@@ -52,7 +52,7 @@ const Table = ({products ,handelAdd, favorite}) => {
                   <td>
                     <button onClick={() => handelAdd(item)}
                       disabled={isFavorite}
-                      className={`text-4xl  ${isFavorite? 'text-red-700': ' text-blue-400'}`}
+                      className={`text-4xl  ${isFavorite? 'text-red-700 cursor-not-allowed': ' text-blue-400'}`}
                       >
                       <FaHeart/>
                     </button>
