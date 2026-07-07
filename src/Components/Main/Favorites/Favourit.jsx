@@ -41,8 +41,8 @@ const Favourit = ({favorite,removeItems}) => {
                                                     {/* text-div */}
                                                     <div className="text-start">
                                                         <h3 className="">{item.title.slice(0,20)}</h3>
-                                                        <p>{item.currentBidPrice}</p>
-                                                        <p>{item.bidsCount}</p>
+                                                        <p>${item.currentBidPrice}</p>
+                                                        <p>Bids Count{item.bidsCount}</p>
                                                     </div>
                                                     {/* btn */}
                                                     <div>
