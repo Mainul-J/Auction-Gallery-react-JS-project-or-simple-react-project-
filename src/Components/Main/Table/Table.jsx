@@ -18,7 +18,7 @@ const Table = ({products ,handelAdd, favorite}) => {
 
     return (
         <div className='w-7/12'>
-       <div className="overflow-x-auto rounded-xl border border-base-300 shadow-lg">
+       <div className="overflow-x-auto rounded-2xl border border-base-300 shadow-lg  bg-white">
   <table className="table table-zebra" >
     <thead className="bg-base-200">
       <tr>

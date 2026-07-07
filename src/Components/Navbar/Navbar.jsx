@@ -2,8 +2,8 @@ import { CiBellOn } from "react-icons/ci";
 
 const Navbar = () => {
   return (
-    <div className="mx-auto w-10/12">
-      <div className="navbar bg-base-100 shadow-sm">
+    <div className="">
+      <div className="navbar w-10/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
